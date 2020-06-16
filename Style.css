@@ -283,6 +283,9 @@ html
   .nav {
     justify-content: space-around;
   }
+p{
+	text-align:justify;
+}
   .prj-area
 {
 	height: auto;
