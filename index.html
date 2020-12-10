@@ -7,7 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="Style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+
+
 </head>
 <body>
 	<div class="navbar">
@@ -75,14 +79,70 @@ with the applied measurements.</div>
 	<div class="con-area" id="contact">
 		<section class="text-part" id="text">
 			<h1>Contact</h1>
-			<p>If you have any idea about developing a project together? Then you can contact me through my mail id. Or you can call me. </p>
+			<p>If you have any idea about developing a project together! Then you can contact me through my mail id or you can call me. </p>
+			
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-sm">
+     <form id="contact" method="post" autocomplete="off" name="google-sheet"> 
+
+
+     	 <div class="form-group">
+        <input type="text" class="form-control" name="Name" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
+   
+  </div>
+
+
+  <div class="form-group">
+        <input type="email" class="form-control" name="Email"id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+   
+  </div>
+
+
+   <div class="form-group">
+        <textarea type="text" cols="30"  rows="4" class="form-control" name="Discuss" id="text" aria-describedby="emailHelp" placeholder="Discuss"></textarea>
+   
+  </div>
+ 
+  
+  <button type="submit" name="submit"class="send" value="send">Send</button>
+</form>
+    </div>
+    
+  </div>
+</div>
+
 			<section class="con-click">
+				
+
+
 				<a href="tel:9398594056">Call me <i class="fa fa-phone"></i></a>
 			<a href="mailto:saivenkat.r.123@gmail.com">Mail <i class="fa fa-envelope"></i></a>
 			</section>
 			</section>
 
+
 	</div>	
 	</div>
+
+
+
+ <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzcbB_ep_p4LfwfkOE-R9J5SM5hjwxTZKzAimTTbQjogBuONSY/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
+<footer>&copy; Rayavarapu Saivenkat All Rights Reserved</footer>
 </html>
