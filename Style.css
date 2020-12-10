@@ -313,7 +313,10 @@ text-align:justify;
 }
 
 
-
+.con-area p
+{
+	text-align:left;
+}
 
 .con-click
 {
