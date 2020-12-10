@@ -443,7 +443,10 @@ p
 	line-height:30px; 
 }
 
-
+.home-area,.about-area, .skills-area, .prj-area, .con-area
+{
+	padding-left: 10px;
+}
 
 
 .prj-area
