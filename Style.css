@@ -80,6 +80,7 @@ a:hover { opacity: 1; }
 	width:100%;
 	height: 760px;
 
+
 }
 
 #front-area
@@ -147,7 +148,7 @@ a:hover { opacity: 1; }
 	
 	width: 70%;
 	height:90%;
-	
+
 }
 .skills-area
 {
@@ -313,16 +314,14 @@ text-align:justify;
 }
 
 
-.con-area p
-{
-	text-align:left;
-}
+
 
 .con-click
 {
 	display: flex;
 	flex-direction: row wrap;
 	justify-content: center;
+
 	}
 .con-click a
 {
@@ -362,7 +361,7 @@ html
   }
   p
   {
-  	text-align: left;
+  	text-align: justify;
   }
   .prj-area
 {
@@ -371,6 +370,7 @@ html
 }
 .con-area
 {
+	
 	height: auto;
 }
 }
@@ -406,6 +406,9 @@ html
    
   }
   
+
+
+
 
  .home-area
  {
@@ -443,11 +446,11 @@ p
 	line-height:30px; 
 }
 
+
 .home-area,.about-area, .skills-area, .prj-area, .con-area
 {
-	padding-left: 5px;
+	padding-left: 15px;
 }
-
 
 .prj-area
 {
@@ -455,16 +458,37 @@ p
 	margin-bottom:10px;  
 }
 
+.container
+{
+	background-color: transparent;
+	border:none;
+}
 
+.form-group input,textarea
+{
+	color: white;
+	background-color: transparent;
+}
+
+.form-group input:hover
+{
+	background-color: white;
+}
+
+.form-group textarea:hover
+{
+	background-color: white;
+}
 
 .con-area
 {
+	
 	height: auto;
 }
 .con-click
 {
 	display: flex;
-	/*flex-flow: column wrap;
+/*	flex-flow: row wrap;
 	*/justify-content: space-around;
 }
 
